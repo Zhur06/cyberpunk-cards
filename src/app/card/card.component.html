@@ -1,0 +1,19 @@
+<button class="image-card-container" (click)="m_focusOnCard()">
+  <div class="image-card">
+    <img src="{{ card().image }}" alt="{{ card().name }}" />
+  </div>
+</button>
+
+<div class="card-opened" [ngClass]="m_focused() ? 'active' : 'disabled'">
+  <div class="photos">
+    <div class="image-card">
+      <img src="{{ card().image }}" alt="{{ card().name }} main image" />
+      <span class="label">{{ cardLabel() }}</span>
+    </div>
+  </div>
+
+  <div class="texts">
+    <h1 class="title">{{ card().name }}</h1>
+    <p class="description" *ngIf="card().description">{{ card().description }}</p>
+  </div>
+</div>

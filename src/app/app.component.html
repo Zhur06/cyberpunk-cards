@@ -1,11 +1,8 @@
 <main>
+  <app-background></app-background>
   <div class="image-list">
     @for (card of cards; track $index) {
-      <div class="image-card-container">
-        <div class="image-card">
-          <img src="{{ card.previewImageUrl }}" alt="{{ card.name }}" />
-        </div>
-      </div>
+      <app-card [card]="card" class="image-card-container"></app-card>
     }
   </div>
 </main>

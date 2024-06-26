@@ -1,0 +1,3 @@
+Fira Mono - Текст на карточках, текст под иконками
+Ubuntu Mono - BackgroundBottomRight
+Odibee Sans - BacgroundTopRight
