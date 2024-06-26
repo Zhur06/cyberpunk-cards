@@ -5,7 +5,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
-  z-index: -1;
+  z-index: -1000;
   background: radial-gradient(123.63% 123.63% at 80.24% 107.23%, #1F0505 0%, #7C2736 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
 
   .top-left {

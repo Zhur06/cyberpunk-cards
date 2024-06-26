@@ -1,6 +1,7 @@
 <button class="image-card-container" (click)="m_focusOnCard()">
   <div class="image-card">
     <img src="{{ card().image }}" alt="{{ card().name }}" />
+    <span class="label">{{ cardLabel() }}</span>
   </div>
 </button>
 

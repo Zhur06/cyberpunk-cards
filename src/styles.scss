@@ -18,3 +18,24 @@ button {
   border: none;
   cursor: pointer;
 }
+
+// Fonts
+@font-face {
+  font-family: 'fira';
+  src: url('assets/spidz_not_spizd/fonts/FiraMono-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Fira Mono Regular';
+  src: url('assets/spidz_not_spizd/fonts/FiraMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: url('assets/spidz_not_spizd/fonts/UbuntuMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Odibee Sans';
+  src: url('assets/spidz_not_spizd/fonts/OdibeeSans-Regular.ttf') format('truetype');
+}
