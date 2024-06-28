@@ -148,6 +148,40 @@
     z-index: 500;
   }
 
+  .back {
+    position: absolute;
+    display: flex;
+
+    top: 12px;
+    left: 42px;
+
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    padding: 6px;
+
+    border-radius: 2px;
+
+    background: #400B14F0;
+
+    z-index: 1500;
+
+    * {
+      z-index: 1500;
+    }
+
+    .label {
+      font-family: 'fira';
+      color: #A64B6C;
+
+      line-height: 3em;
+    }
+  }
+
   .photos {
     display: flex;
     // position: absolute;

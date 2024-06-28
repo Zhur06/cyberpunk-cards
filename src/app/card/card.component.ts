@@ -19,5 +19,9 @@ export class CardComponent {
     this.m_focused.set(true);
   }
 
+  protected m_focusedOffCard(): void {
+    this.m_focused.set(false);
+  }
+
   protected cardLabel: Signal<string> = computed<string>(() => `EMP.${this.card().name.replaceAll(' ', '').toUpperCase()}`);
 }

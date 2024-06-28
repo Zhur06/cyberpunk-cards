@@ -6,7 +6,13 @@
 </button>
 
 <div class="card-opened" [ngClass]="m_focused() ? 'active' : 'disabled'">
-    <img src="assets/spidz_not_spizd/InfoCardCenter.svg" alt="" class="background">
+  <img src="assets/spidz_not_spizd/InfoCardCenter.svg" alt="" class="background" />
+
+  <button class="back" (click)="m_focusedOffCard()">
+    <img class="icon" src="assets/spidz_not_spizd/BackButtonIcon.svg" alt="" />
+    <span class="label">BACK</span>
+  </button>
+
   <div class="photos">
     <img class="image" src="{{ card().image }}" alt="{{ card().name }} image" />
     <span class="label">{{ cardLabel() }}</span>
