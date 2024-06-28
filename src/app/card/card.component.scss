@@ -123,9 +123,14 @@
 }
 
 .card-opened {
+  display: flex;
   position: fixed;
   top: 50%;
   left: 50%;
+
+  flex-direction: row;
+  gap: 20px;
+
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 
@@ -174,6 +179,39 @@
 
       color: #A64B6C;
       font-family: 'fira';
+    }
+
+    * {
+      z-index: 700;
+    }
+  }
+
+  .texts {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+
+    padding-top: calc(100px / 1024px * 100%);
+    
+    z-index: 600;
+
+    .title {
+      display: flex;
+
+      width: calc(720px / 1220px * 100%);
+
+      color: #4FC0FF;
+      font-family: 'fira';
+
+      border-bottom: 1px solid #4FC0FF;
+    }
+
+    .description {
+      display: flex;
+      font-family: 'fira';
+      color: #FFFFFF;
+      width: calc(820px / 1220px * 100%);
     }
 
     * {
