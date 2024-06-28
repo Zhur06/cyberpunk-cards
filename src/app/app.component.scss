@@ -41,6 +41,8 @@
   overflow-y: scroll;
   overflow-x: hidden;
 
+  scrollbar-width: none;
+
   &::-webkit-scrollbar {
     display: none;
   }
