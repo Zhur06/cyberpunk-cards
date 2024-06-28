@@ -103,6 +103,7 @@
       // width: 100%;
       
       aspect-ratio: 1 / 2;
+      object-fit: cover;
       align-self: center;
 
       border: 6px solid;
@@ -122,12 +123,14 @@
 }
 
 .card-opened {
-  position: absolute;
-  
-  top: calc(111px / 1024px * 100%);
-  right: calc(110px / 1440px * 100%);
-  bottom: calc(110px / 1024px * 100%);
-  left: calc(110px / 1440px * 100%);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  width: calc(1220px / 1440px * 100%);
+  height: calc(800px / 1024px * 100%);
   
   z-index: 1000;
 
@@ -138,6 +141,44 @@
     width: 100%;
     height: 100%;
     z-index: 500;
+  }
+
+  .photos {
+    display: flex;
+    // position: absolute;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    // left: 0;
+    // bottom: 0;
+    height: 100%;
+    width: calc(320px / 1220px * 100%);
+
+    z-index: 600;
+
+    padding-top: calc(100px / 1024px * 100%);
+    padding-bottom: calc(40px / 1024px * 100%);
+
+    .image {
+      // height: 100%;
+
+      aspect-ratio: 1 / 2;
+
+      object-fit: cover;
+    }
+
+    .label {
+      display: flex;
+      align-self: flex-end;
+
+      color: #A64B6C;
+      font-family: 'fira';
+    }
+
+    * {
+      z-index: 700;
+    }
   }
 }
 
