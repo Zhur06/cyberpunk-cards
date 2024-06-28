@@ -98,6 +98,7 @@
         "deploy": {
           "builder": "angular-cli-ghpages:deploy",
           "options": {
+            "repo": "https://github.com/Zhur06/cyberpunk-cards",
             "baseHref": "/cyberpunk-cards/",
             "name": "Zhur06",
             "email": "zhur06@gmail.com"
