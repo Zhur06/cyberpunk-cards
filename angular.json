@@ -94,6 +94,14 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "/cyberpunk-cards/",
+            "name": "Zhur06",
+            "email": "zhur06@gmail.com"
+          }
         }
       }
     }
